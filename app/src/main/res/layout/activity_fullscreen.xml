@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root"
     android:layout_width="match_parent"
@@ -17,6 +18,33 @@
         android:layout_height="?android:attr/actionBarSize"
         android:layout_gravity="bottom"
         android:background="@color/colorPrimary">
-        
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_full_play"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_play" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_full_stop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toRightOf="@id/iv_full_play"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_play" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
